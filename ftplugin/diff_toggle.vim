@@ -22,5 +22,5 @@ function! s:ToggleDiff( count )
   endfor
 endfunction
 
-nnoremap <silent> <buffer> <Space> :<C-u>call <SID>ToggleDiff(v:count1)<CR>
-vnoremap <silent> <buffer> <Space> :<C-u>call <SID>ToggleDiff(line("'>") - line("'<") + 1)<CR>
+nnoremap <silent> <buffer> <Space>d :<C-u>call <SID>ToggleDiff(v:count1)<CR>
+vnoremap <silent> <buffer> <Space>d :<C-u>call <SID>ToggleDiff(line("'>") - line("'<") + 1)<CR>
