@@ -23,4 +23,6 @@ function! s:ToggleDiff( count )
 endfunction
 
 nnoremap <silent> <buffer> <leader>d :<C-u>call <SID>ToggleDiff(v:count1)<CR>
+nnoremap <silent> <buffer> <leader>D :<C-u>call <SID>ToggleDiff(v:count1)<CR>
 vnoremap <silent> <buffer> <leader>d :<C-u>call <SID>ToggleDiff(line("'>") - line("'<") + 1)<CR>
+vnoremap <silent> <buffer> <leader>D :<C-u>call <SID>ToggleDiff(line("'>") - line("'<") + 1)<CR>
